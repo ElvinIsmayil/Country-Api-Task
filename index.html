@@ -10,12 +10,15 @@
     <title>Where in the World?</title>
 </head>
 <body>
-    <!-- Navbar -->
+    <div id="spinner-container" class="spinner-container">
+        <div class="spinner"></div>
+    </div>
+
     <nav class="shadow navbar bg-body-tertiary">
         <div class="container d-flex justify-content-between align-items-center">
             <a class="navbar-brand fw-bold">Where in the world?</a>
             <div class="toggle-mode">
-                <a href="#" role="button"><i class="bi bi-moon-stars-fill"></i> Dark mode</a>
+                <a role="button"><i class="bi bi-moon-stars-fill"></i> Dark mode</a>
             </div>
         </div>
     </nav>
@@ -27,7 +30,7 @@
                 <input class="form-control w-auto fs-5 border-0" type="search" placeholder="Search for a country..." aria-label="Search">
             </form>
             
-            <div class="dropdown ">
+            <div class="dropdown">
                 <button class="shadow p-2 btn btn-close-white dropdown-toggle border-opacity-10 border fs-6" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Filter by Region
                 </button>
@@ -43,65 +46,16 @@
         </div>
     </section>
 
-
-    <section id="cards">
+    <section>
         <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-md-6 col-lg-3">
-                    <div class="card shadow h-100">
-                        <img src="./image.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title mb-3">Card title</h5>
-                            <p class="card-text mb-1">An item</p>
-                            <p class="card-text mb-1">A second item</p>
-                            <p class="card-text mb-1">A third item</p>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="col-md-6 col-lg-3">
-                    <div class="card shadow h-100">
-                        <img src="./image.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">An item</p>
-                            <p class="card-text">A second item</p>
-                            <p class="card-text">A third item</p>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="col-md-6 col-lg-3">
-                    <div class="card shadow h-100">
-                        <img src="./image.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">An item</p>
-                            <p class="card-text">A second item</p>
-                            <p class="card-text">A third item</p>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="col-md-6 col-lg-3">
-                    <div class="card shadow h-100">
-                        <img src="./image.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">An item</p>
-                            <p class="card-text">A second item</p>
-                            <p class="card-text">A third item</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="row g-5" id="countries">
             </div>
         </div>
     </section>
-    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
+
     <script src="./assets/js/main.js"></script>
 </body>
-</html>
